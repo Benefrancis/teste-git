@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "28eb8048-b988-494b-9c9f-ab7f595d5ad6",
+		"name": "Coda Comigo - Pessoas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1524675"
+	},
+	"item": [
+		{
+			"name": "PF",
+			"item": [
+				{
+					"name": "Pessoas Físicas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/pf",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PF/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/pf/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pf",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pessoa Física",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Edilaine Sudré Marcelino do Nascimento\",\r\n    \"nascimento\": \"1975-05-28\",\r\n    \"cpf\": \"123165465456\",\r\n    \"dependentes\": [\r\n        {\r\n            \"id\": 2,\r\n            \"nome\": \"Davi Lucca\",\r\n            \"nascimento\": \"2017-05-03\",\r\n            \"cpf\": \"1321321654\",\r\n            \"dependentes\": []\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/pf",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PJ",
+			"item": [
+				{
+					"name": "Pessoas Jurídicas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/pf",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PJ/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/pj/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pj",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pessoa Jurídica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Benezinho Holding\",\r\n    \"nascimento\": \"2018-05-24\",\r\n    \"cnpj\": \"132132132154\",\r\n    \"socios\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/pj",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"pj"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
